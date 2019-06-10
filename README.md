@@ -3,7 +3,13 @@ A python script that allows you to see what digits your model guessed wrong by c
 The frames/plots that contain a wrong predicted digit will be 2s long the ones that do not are 1/15 * s.  
 I have also provided my model and the script I used to train it.  
 
-The **P** stands for Predicted; The **R** stands for (in) Reality or really
+The **P** stands for Predicted;
+
+## What can you see?
+1. Was the prediction correct or was it wrong
+2. After correct/wrong will display the correct answer
+3. Will display the prediction it made and how certain it was
+
 ## Prerequisites
 tensorflow, numpy, opencv, matplotlib
 ## How to use
