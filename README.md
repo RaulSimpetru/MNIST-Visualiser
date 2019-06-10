@@ -16,5 +16,3 @@ save_temp_figs: **0** to delete the temporary jpgs made by the script; **1** to 
 ```
 python mnist-visualizer.py model.h5 1
 ```
-
-[![Reee](https://youtu.be/Aq91fyZpgBs/0.jpg)](https://youtu.be/Aq91fyZpgBs)
