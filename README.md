@@ -22,4 +22,4 @@ save_temp_figs: **0** to delete the temporary jpgs made by the script; **1** to 
 ```
 python mnist-visualizer.py model.h5 1
 ```
-[![IMAGE ALT TEXT HERE](1.jpg)](https://youtu.be/Y3spwALjwSk)
+[![](1.jpg)](https://youtu.be/Y3spwALjwSk)
