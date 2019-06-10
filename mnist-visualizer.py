@@ -23,7 +23,7 @@ def display_predictions(model_file_path):
     if not os.path.exists("figs"):
         os.mkdir("figs")
 
-    failed = False
+    failed = False  # Will be set to True if a plot contains a failed prediction
 
     how_many_digits_per_plot = 50
     for i, _ in enumerate(x_test):
@@ -49,11 +49,11 @@ def display_predictions(model_file_path):
         prediction = np.argmax(predictions[0])
 
         if prediction == y_test[i]:
-            plt.title(str(i + 1) + "\nCorrect", color="black", fontsize=7, y=0.9)
-            plt.xlabel('P: ' + str(prediction) + " R: " + str(y_test[i]), color="black", fontsize=7)
+            plt.title(str(i + 1) + "\nCorrect" + " (" + str(y_test[i]) + ")", color="black", fontsize=7, y=0.9)
+            plt.xlabel('P: ' + str(prediction) + " (" + str(round(predictions[0][prediction], 2)) + ")", color="black", fontsize=7)
         else:
-            plt.title(str(i + 1) + "\nWrong", color="red", fontsize=7, y=0.9)
-            plt.xlabel('P: ' + str(prediction) + " R: " + str(y_test[i]), color="red", fontsize=7)
+            plt.title(str(i + 1) + "\nWrong" + " (" + str(y_test[i]) + ")", color="red", fontsize=7, y=0.9)
+            plt.xlabel('P: ' + str(prediction) + " (" + str(round(predictions[0][prediction], 2)) + ")", color="red", fontsize=7)
             failed = True
 
         # Every 100th iteration save the plot and start another one
