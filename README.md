@@ -1,7 +1,9 @@
 # MNIST-Visualizer
 A python script that allows you to see what digits your model guessed wrong by creating a video.  
 The frames/plots that contain a wrong predicted digit will be 2s long the ones that do not are 1/15 * s.  
-I have also provided my model and the script I used to train it.
+I have also provided my model and the script I used to train it.  
+
+The **P** stands for Predicted; The **R** stands for (in) Reality or really
 ## Prerequisites
 tensorflow, numpy, opencv, matplotlib
 ## How to use
@@ -15,4 +17,4 @@ save_temp_figs: **0** to delete the temporary jpgs made by the script; **1** to 
 python mnist-visualizer.py model.h5 1
 ```
 
-![](mnist_model.gif)
+[![Reee](https://youtu.be/Aq91fyZpgBs/0.jpg)](https://youtu.be/Aq91fyZpgBs)
