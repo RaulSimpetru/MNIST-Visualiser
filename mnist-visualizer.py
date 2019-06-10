@@ -20,6 +20,9 @@ def display_predictions(model_file_path):
     model = tf.keras.models.load_model(model_file_path, compile=True)
     model.summary()
 
+    if not os.path.exists("figs"):
+        os.mkdir("figs")
+
     failed = False
 
     how_many_digits_per_plot = 50
