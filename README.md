@@ -1,4 +1,4 @@
-# MNIST-Visualizer
+# MNIST-Visualiser
 A python script that allows you to see what digits your model guessed wrong by creating a video.  
 The frames/plots that contain a wrong predicted digit will be 2s long the ones that do not are 1/15 * s.  
 I have also provided my model and the script I used to train it.  
